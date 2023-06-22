@@ -1,0 +1,30 @@
+@startuml
+'https://plantuml.com/use-case-diagram
+
+left to right direction
+actor admin
+package website {
+usecase "adaugare harta" as UC00
+usecase "adaugare orase " as UC0
+usecase "adaugare restaurant " as UC1
+usecase "stergere restaurant " as UC2
+}
+admin-->UC00
+admin-->UC0
+admin-->UC1
+admin-->UC2
+
+left to right direction
+actor utilizator
+package website {
+usecase "vizualizare orase pe harta" as UC000
+usecase "vizualizare restaurante pe harta " as UC3
+usecase "vizualizare informatii restaurant " as UC4
+usecase " filtrare restaurante" as UC5
+
+}
+utilizator-->UC000
+utilizator-->UC3
+utilizator-->UC4
+utilizator-->UC5
+@enduml
