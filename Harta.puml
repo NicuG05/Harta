@@ -3,28 +3,37 @@
 
 left to right direction
 actor admin
-package website {
-usecase "adaugare harta" as UC00
-usecase "adaugare orase " as UC0
-usecase "adaugare restaurant " as UC1
-usecase "stergere restaurant " as UC2
+package Harta_Interactiva {
+usecase "adaugare buton HOME" as UC
+usecase "adaugare harta prin aplicatia google maps" as UC1
+usecase "va marca fiecare oras cu un indicator pin al aplicatiei " as UC2
+usecase "va adauga restaurante dintr-o baza de date in orasul selectat " as UC3
+usecase "va putea stergere restaurante  " as UC4
+usecase "adaugare nume aplicatie pe fundal" as UC5
+usecase "adaugare buton Cautare Restaurant" as UC6
 }
-admin-->UC00
-admin-->UC0
+admin-->UC
 admin-->UC1
 admin-->UC2
+admin-->UC3
+admin-->UC4
+admin-->UC5
+admin-->UC6
+
 
 left to right direction
 actor utilizator
-package website {
-usecase "vizualizare orase pe harta" as UC000
-usecase "vizualizare restaurante pe harta " as UC3
-usecase "vizualizare informatii restaurant " as UC4
-usecase " filtrare restaurante" as UC5
+package Harta_Interactiva {
+usecase "deschidere pagina web" as UC00
+usecase "vizualizare harta web " as UC01
+usecase "selectare orase prin indicatorul pin " as UC02
+usecase "selectare restarurante din orasul selectat " as UC03
+usecase " filtrare restaurante prin selectarea butonului Cautare restaurant " as UC04
 
 }
-utilizator-->UC000
-utilizator-->UC3
-utilizator-->UC4
-utilizator-->UC5
+utilizator-->UC00
+utilizator-->UC01
+utilizator-->UC02
+utilizator-->UC03
+utilizator-->UC04
 @enduml

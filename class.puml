@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+class Restaurant {
+}
+class Rating {
+}
+class Poze{
+}
+class Detalii{
+}
+class Recenzii {
+}
+Restaurant-->Rating
+Restaurant-->Poze
+Restaurant-->Detalii
+Restaurant-->Recenzii
+@enduml
